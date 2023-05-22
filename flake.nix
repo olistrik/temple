@@ -8,7 +8,7 @@
       let pkgs = import nixpkgs { inherit system; };
       in rec {
         packages = {
-          temple = pkgs.buildGoModule {
+          default = pkgs.buildGoModule {
             name = "temple";
             src = ./.;
             vendorSha256 = null;
@@ -16,13 +16,14 @@
         };
 
         apps = {
-          temple = flake-utils.lib.mkApp {
+          default = flake-utils.lib.mkApp {
             drv = packages.temple;
             exePath = /bin/temple;
           };
         };
-
-        defaultPackage = packages.temple;
-        defaultApp = apps.temple;
-      });
+      }) // {
+        overlays.default = (final: prev: rec {
+          temple = self.packages."${final.system}".default;
+        });
+      };
 }
