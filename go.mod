@@ -1,4 +1,4 @@
-module git.hub.klippa.com/klippa/temple
+module github.com/kranex/temple
 
 go 1.19
 

@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os"
 
-	"git.hub.klippa.com/klippa/temple/cmd/internal"
+	"github.com/kranex/temple/cmd/internal"
 	"github.com/spf13/cobra"
 )
 

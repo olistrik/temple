@@ -21,7 +21,7 @@ THE SOFTWARE.
 */
 package main
 
-import "git.hub.klippa.com/klippa/temple/cmd"
+import "github.com/kranex/temple/cmd"
 
 func main() {
 	cmd.Execute()
