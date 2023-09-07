@@ -1,4 +1,4 @@
-module github.com/kranex/temple
+module github.com/olistrik/temple
 
 go 1.19
 

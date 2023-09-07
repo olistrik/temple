@@ -25,7 +25,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/kranex/temple/cmd/internal"
+	"github.com/olistrik/temple/cmd/internal"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

@@ -21,7 +21,7 @@ THE SOFTWARE.
 */
 package main
 
-import "github.com/kranex/temple/cmd"
+import "github.com/olistrik/temple/cmd"
 
 func main() {
 	cmd.Execute()

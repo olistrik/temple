@@ -9,7 +9,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/kranex/temple/cmd/internal"
+	"github.com/olistrik/temple/cmd/internal"
 	"github.com/spf13/cobra"
 )
 
